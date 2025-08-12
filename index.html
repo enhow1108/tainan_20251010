@@ -26,7 +26,7 @@
             }
         }
 
-        .day-card, .extra-card, .video-container, .podcast-container {
+        .day-card, .extra-card, .video-container, .podcast-container, .foodie-guide {
             animation: fadeIn 0.6s ease-out forwards;
             opacity: 0; /* Start as invisible */
         }
@@ -90,7 +90,7 @@
                         <div class="space-y-4">
                             <div>
                                 <h4 class="font-bold text-gray-800">民宿集合與下午茶點心</h4>
-                                <p class="text-gray-600">下午3點，大家各自用完午餐後在「趣遊赤坎民宿」集合辦理入住。稍作休息後，可步行至周邊品嚐知名小吃當作下午茶點心：</p>
+                                <p class="text-gray-600">大家各自用完午餐後或是活動後(大家時間不固定), 下午3點「趣遊赤坎民宿」可以辦理入住。稍作休息後，可步行至周邊品嚐知名小吃當作下午茶點心：</p>
                                 <ul class="list-disc list-inside text-gray-600 mt-2 pl-2">
                                     <li>武廟肉圓</li>
                                     <li>傻發腸粉</li>
@@ -218,8 +218,92 @@
             </div>
         </div>
 
+        <!-- Foodie Guide -->
+        <div class="foodie-guide mt-12 bg-white p-6 rounded-2xl shadow-lg" style="animation-delay: 0.6s;">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">府城美食攻略</h2>
+            <div class="space-y-8">
+                <!-- 小吃 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-amber-600 mb-2">府城精髓：小吃協奏曲</h3>
+                    <p class="text-gray-600 mb-4">在台南，將「小吃」作為晚餐是一種備受推崇的在地文化。這並非單純的點心，而是一場漸進式的盛宴，饕客們會從一個大師級攤位移動至下一個，體驗最道地的用餐方式。</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-bold">牛肉湯</h4>
+                            <p class="text-sm text-gray-600 mt-1">「溫體牛」是台南牛肉湯的靈魂。許多店家營業至深夜，例如**鬍鬚忠牛肉湯**、**阿村第二代牛肉湯**和**永樂牛肉湯**。</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-bold">鱔魚意麵</h4>
+                            <p class="text-sm text-gray-600 mt-1">分為「乾炒」與「羹」兩種風格。「阿江炒鱔魚」是傳奇名店，而**八三鱔魚意麵**則是在地人的心頭好。</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-bold">豬心冬粉</h4>
+                            <p class="text-sm text-gray-600 mt-1">台南獨有的精緻小吃。米其林推薦的**阿明豬心**是代表，雖需排隊但風味絕佳。</p>
+                        </div>
+                    </div>
+                    <h4 class="font-semibold mt-4 mb-2">其他宵夜必嚐：</h4>
+                    <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                        <li>**下大道蘭米糕**: 榮獲米其林必比登推薦的糯米小吃。</li>
+                        <li>**福泰飯桌第三代**: 傳承超過80年的傳統「飯桌仔」文化。</li>
+                        <li>**醇涎坊古早味鍋燒意麵**: 湯頭帶有台南特有的甜味。</li>
+                    </ul>
+                </div>
+
+                <!-- 合菜 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-amber-600 mb-2">闔家盛宴：經典台菜合菜</h3>
+                    <p class="text-gray-600 mb-4">「合菜」是台菜文化的象徵，非常適合家庭或多人團體。**強烈建議提前預約！**</p>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-bold">阿霞飯店</h4>
+                            <p class="text-sm text-gray-600 mt-1">府城的指標性餐廳，以招牌菜「紅蟳米糕」聞名，是體驗經典台南宴席的首選。</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-bold">筑馨居</h4>
+                            <p class="text-sm text-gray-600 mt-1">在超過140年歷史的清朝古厝中，享用主廚決定的「無菜單料理」，氛圍與歷史感兼具。</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-bold">福樓餐廳</h4>
+                            <p class="text-sm text-gray-600 mt-1">菜單品項近400道，涵蓋台菜、海鮮、燒烤，是能滿足各種需求的實力派選擇。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 餐酒館 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-amber-600 mb-2">食尚潮流：特色餐酒館</h3>
+                    <p class="text-gray-600 mb-4">體驗台南現代且不斷演進的餐飲風貌，適合尋求時尚或國際化口味的夜晚。</p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                        <li>**日式風格**: **走走Totour**，位於美術館附近，以高品質的日式燒烤、關東煮和清酒著稱。</li>
+                        <li>**異國融合**: **龜龜毛毛南洋餐室**以獨特的南洋風味和主題裝潢脫穎而出。</li>
+                        <li>**世界級雞尾酒**: **Bar T.C.R.C.**曾獲選「亞洲50最佳酒吧」，以無酒單的客製化調酒聞名，建議晚餐後造訪。</li>
+                    </ul>
+                </div>
+                
+                <!-- 家庭聚餐 -->
+                <div>
+                    <h3 class="text-2xl font-bold text-amber-600 mb-2">溫馨家常：家庭聚餐首選</h3>
+                    <p class="text-gray-600 mb-4">重點在於舒適、便利以及能滿足所有年齡層的菜單。</p>
+                     <ul class="list-disc list-inside text-gray-600 text-sm space-y-1">
+                        <li>**咕嚕家庭料理館**: 提供個人簡餐與共享熱炒，份量十足，是在地人的人氣選擇。</li>
+                        <li>**8818 比薩屋**: 數十年如一日的經典美式披薩與炸雞，是家庭聚餐的懷舊好去處。</li>
+                        <li>**小二鴛鴦麻辣鍋**: 適合喜愛圍爐共享的火鍋愛好者。</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 雨天備案 -->
+        <div class="extra-card mt-12 bg-white p-6 rounded-2xl shadow-lg" style="animation-delay: 0.8s;">
+             <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">雨天備案</h2>
+             <div class="space-y-4">
+                <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
+                    <p class="text-blue-700">若遇下雨，可將戶外行程改為室內的<span class="font-bold">臺南市美術館</span>、<span class="font-bold">奇美博物館</span>或<span class="font-bold">十鼓文創園區</span>（部分設施為室內）。</p>
+                </div>
+             </div>
+        </div>
+
         <!-- 額外建議 -->
-        <div class="extra-card mt-12 bg-white p-6 rounded-2xl shadow-lg" style="animation-delay: 0.6s;">
+        <div class="extra-card mt-12 bg-white p-6 rounded-2xl shadow-lg" style="animation-delay: 1s;">
              <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">給團體出遊的額外建議</h2>
              <div class="flex flex-col md:flex-row justify-center items-center gap-8 text-center">
                  <div class="flex items-center flex-col p-4">
@@ -238,22 +322,6 @@
                  </div>
              </div>
         </div>
-        
-        <!-- 雨天備案 -->
-        <div class="extra-card mt-12 bg-white p-6 rounded-2xl shadow-lg" style="animation-delay: 0.8s;">
-             <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">雨天備案</h2>
-             <div class="space-y-4">
-                <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                    <h4 class="font-bold text-blue-800">第二天備案</h4>
-                    <p class="text-blue-700">若遇下雨，可將上午的戶外行程改為室內的<span class="font-bold">臺南市美術館二館</span>或<span class="font-bold">奇美博物館</span>。</p>
-                </div>
-                <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                    <h4 class="font-bold text-blue-800">第三天備案</h4>
-                    <p class="text-blue-700">若選擇方案一，雨天可改至<span class="font-bold">奇美博物館</span>，與十鼓距離不遠，展覽豐富，可從動態玩樂轉為靜態觀賞。</p>
-                </div>
-             </div>
-        </div>
-
 
         <footer class="text-center text-gray-500 mt-12 pb-4">
             <p>祝您有趟愉快的旅程！</p>
@@ -276,7 +344,7 @@
                 threshold: 0.1 // Trigger when 10% of the element is visible
             });
 
-            const cards = document.querySelectorAll('.day-card, .extra-card');
+            const cards = document.querySelectorAll('.day-card, .extra-card, .foodie-guide');
             cards.forEach(card => {
                 observer.observe(card);
             });
