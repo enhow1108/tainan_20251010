@@ -26,7 +26,7 @@
             }
         }
 
-        .day-card, .extra-card, .video-container {
+        .day-card, .extra-card, .video-container, .podcast-container {
             animation: fadeIn 0.6s ease-out forwards;
             opacity: 0; /* Start as invisible */
         }
@@ -63,10 +63,20 @@
         </header>
 
         <!-- Video Highlights -->
-        <div class="video-container mb-12 rounded-2xl shadow-lg overflow-hidden bg-black">
+        <div class="video-container mb-6 rounded-2xl shadow-lg overflow-hidden bg-black">
             <div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen" allowfullscreen height="100%" src="https://streamable.com/e/cwg3jq?" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
         </div>
         
+        <!-- Podcast Link -->
+        <div class="podcast-container mb-12 p-6 bg-white rounded-2xl shadow-lg text-center" style="animation-delay: 0.2s;">
+             <h2 class="text-2xl font-bold text-gray-800 mb-2">行程 Podcast 導覽</h2>
+             <p class="text-gray-600 mb-4">點擊下方按鈕，收聽由 NotebookLM 製作的專屬旅遊 Podcast！</p>
+             <a href="https://notebooklm.google.com/notebook/7049c091-e2c4-42dc-8808-3256e55ee9be?artifactId=267cc8c5-cbd3-4eb3-9097-eb306ef7d442" target="_blank" class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500">
+                 收聽 Podcast
+             </a>
+        </div>
+
+
         <div class="space-y-12">
             <!-- Day 1 -->
             <div class="day-card bg-white rounded-2xl shadow-lg overflow-hidden">
