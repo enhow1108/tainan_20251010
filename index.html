@@ -26,7 +26,7 @@
             }
         }
 
-        .day-card, .extra-card {
+        .day-card, .extra-card, .video-container, .audio-container {
             animation: fadeIn 0.6s ease-out forwards;
             opacity: 0; /* Start as invisible */
         }
@@ -61,6 +61,24 @@
             <h1 class="text-4xl md:text-5xl font-bold text-amber-800">台南親子三日遊</h1>
             <p class="text-lg text-gray-600 mt-2">專為有3-7歲孩子的家庭設計的歷史、生態與美食之旅</p>
         </header>
+
+        <!-- Video Highlights -->
+        <div class="video-container mb-6 rounded-2xl shadow-lg overflow-hidden bg-black">
+            <video class="w-full" controls poster="https://placehold.co/1200x675/a78bfa/ffffff?text=台南之旅+精彩預告">
+                <source src="https://streamable.com/l/cwg3jq/stream.mp4" type="video/mp4">
+                您的瀏覽器不支援影片播放。
+            </video>
+        </div>
+        
+        <!-- Audio Welcome -->
+        <div class="audio-container mb-12 p-4 bg-white rounded-2xl shadow-lg">
+             <h3 class="font-bold text-gray-800 mb-2 text-center">行程語音導覽</h3>
+             <audio controls class="w-full">
+               <source src="https://srv-file.gofile.io/download/sdWlFJ/audio.m4a" type="audio/mp4">
+               您的瀏覽器不支援音訊播放。
+             </audio>
+        </div>
+
 
         <div class="space-y-12">
             <!-- Day 1 -->
