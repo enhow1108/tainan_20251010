@@ -116,8 +116,6 @@
                         
                         <!-- 晚餐統計表單連結 -->
                         <div class="mt-6 p-4 border-t border-gray-200">
-                            <h4 class="font-bold text-gray-800 mb-3">晚餐選項統計</h4>
-                            <p class="text-gray-600 mb-4">請點擊下方按鈕，填寫您想吃的晚餐選項，方便主揪統計人數喔！</p>
                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8kyBjHTDvHWBHBUpkJi-blmNF6VYsHboP5VxFW9MilA8lvA/viewform?usp=header" target="_blank" class="w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500">
                                 晚餐投票
                             </a>
@@ -148,17 +146,30 @@
                 <div class="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
                     <!-- 左側內容 -->
                     <div>
-                        <h3 class="text-xl font-semibold text-sky-700 border-l-4 border-sky-500 pl-3 mb-4">上午行程</h3>
-                        <p class="text-gray-600 mb-2">用完早餐後，直接驅車前往七股，來一趟豐富的生態之旅：</p>
-                        <ul class="list-disc list-inside text-gray-600 mt-2 pl-2 space-y-2">
-                            <li><span class="font-bold">七股鹽山 & 黑面琵鷺生態館：</span>攀登潔白的鹽山，並透過有趣的展覽認識這位「國際明星鳥」。<br><span class="text-amber-600 font-semibold text-sm">（提醒：黑面琵鷺觀賞期約為每年10月至隔年4月。）</span></li>
-                            <li><span class="font-bold">龍山號觀光烤蚵：</span>搭乘觀光漁筏，體驗海上烤蚵的樂趣。<br><span class="text-red-600 text-sm">務必</span>出發前確認龍山號遊船當天班次並提早抵達。</li>
-                        </ul>
+                        <h3 class="text-xl font-semibold text-sky-700 border-l-4 border-sky-500 pl-3 mb-4">上午行程 (三選一)</h3>
+                        <p class="text-gray-600 mb-4">用完早餐後，直接驅車前往七股，依據大家的體力與時間，選擇一項活動：</p>
+                        <div class="p-4 border rounded-lg mb-4">
+                            <h4 class="font-bold text-gray-800">方案一：七股鹽山 & 生態館 (約2-3小時)</h4>
+                            <p class="text-gray-600 mt-1">輕鬆攀登潔白的鹽山，並參觀黑面琵鷺生態展示館，適合喜歡拍照和靜態展覽的家庭。<br><span class="text-amber-600 font-semibold text-sm">（提醒：黑面琵鷺觀賞期約為每年10月至隔年4月。）</span></p>
+                        </div>
+                        <div class="p-4 border rounded-lg mb-4">
+                            <h4 class="font-bold text-gray-800">方案二：龍山號潟湖觀光烤蚵 (約2.5-3小時)</h4>
+                            <p class="text-gray-600 mt-1">搭乘觀光漁筏，體驗海上烤蚵的樂趣，享受新鮮海味。<br><span class="text-red-600 text-sm">務必</span>出發前確認遊船班次並提早抵達。</p>
+                        </div>
+                        <div class="p-4 border rounded-lg">
+                            <h4 class="font-bold text-gray-800">方案三：鹽山 + 烤蚵全體驗 (延伸至下午)</h4>
+                            <p class="text-gray-600 mt-1">若時間充裕，可以將兩個活動都安排進去，這樣上午先玩一個，午餐後再接著玩另一個，整個下午都會在七股度過。</p>
+                        </div>
                         
                         <h3 class="text-xl font-semibold text-sky-700 border-l-4 border-sky-500 pl-3 mb-4 mt-8">午餐 & 下午行程</h3>
                          <ul class="space-y-2 text-gray-600 list-disc list-inside pl-2">
                              <li><span class="font-bold">午餐：</span>在七股的<span class="font-bold">三股海產</span>，品嚐最新鮮的海味料理。</li>
-                             <li><span class="font-bold">下午：</span>返回<span class="font-bold">安平或市區</span>地區走走，或是到<span class="font-bold">成大草皮</span>讓孩子們跑跑跳跳。</li>
+                             <li><span class="font-bold">下午：</span>
+                                <ul class="list-disc list-inside pl-4 mt-1">
+                                    <li>若上午選擇方案一或二，下午可返回<span class="font-bold">安平或市區</span>地區走走，或是到<span class="font-bold">成大草皮</span>讓孩子們跑跑跳跳。</li>
+                                    <li>若上午選擇方案三，下午將繼續在七股完成另一個活動。</li>
+                                </ul>
+                             </li>
                          </ul>
 
                         <h3 class="text-xl font-semibold text-sky-700 border-l-4 border-sky-500 pl-3 mb-4 mt-8">晚餐建議</h3>
@@ -292,8 +303,45 @@
             </div>
         </div>
 
-        <!-- 雨天備案 -->
+        <!-- More Places Guide -->
         <div class="extra-card mt-12 bg-white p-6 rounded-2xl shadow-lg" style="animation-delay: 0.8s;">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">更多景點參考</h2>
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-600 mb-2">關於「孔廟」的深度建議</h3>
+                    <p class="text-gray-600 mb-4">孔廟不僅是古蹟，更是絕佳的親子探索空間：</p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li><span class="font-semibold">開放的奔跑空間：</span>中庭的廣闊草地和紅牆外的榕樹廣場，是讓孩子們安全跑跳的好地方。</li>
+                        <li><span class="font-semibold">生態小驚喜：</span>這裡的松鼠非常多且不怕人，帶著孩子尋找松鼠的蹤跡會是一大樂趣。</li>
+                        <li><span class="font-semibold">文化初體驗：</span>可以帶他們看看「全臺首學」的牌匾，拍張紀念照，感受書卷氣息。</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold text-sky-600 mb-2">行程強化建議</h3>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-bold">第二天下午：安平親子景點大補帖</h4>
+                            <p class="text-sm text-gray-600 mt-1">除了安平老街，這裡還有幾個非常適合您孩子的景點：<br>
+                            - **戶外放電首選：** 安平港濱歷史公園特色遊戲場、安平定情碼頭德陽艦園區。<br>
+                            - **雨天或避暑備案：** 臺南市兒福中心（安平兒童館）。</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-bold">第三天上午：動靜皆宜的親子方案強化</h4>
+                            <p class="text-sm text-gray-600 mt-1">**方案一 (十鼓)：** 園區內有許多極限設施的「兒童體驗版」。<br>
+                            **方案二 (市區)：** 參觀完孔廟後，可順道前往臺南市美術館二館，其獨特的建築本身就是一個景點。</p>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-lg">
+                            <h4 class="font-bold">特色公園：孩子的放電天堂</h4>
+                            <p class="text-sm text-gray-600 mt-1">**健康綠洲公園**以「大船入港」為主題，擁有一座三層樓高的溜滑梯和刺激的雙軌滑索，是台南非常熱門的親子公園。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 雨天備案 -->
+        <div class="extra-card mt-12 bg-white p-6 rounded-2xl shadow-lg" style="animation-delay: 1s;">
              <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">雨天備案</h2>
              <div class="space-y-4">
                 <div class="p-4 bg-blue-50 border border-blue-200 rounded-lg">
@@ -303,7 +351,7 @@
         </div>
 
         <!-- 額外建議 -->
-        <div class="extra-card mt-12 bg-white p-6 rounded-2xl shadow-lg" style="animation-delay: 1s;">
+        <div class="extra-card mt-12 bg-white p-6 rounded-2xl shadow-lg" style="animation-delay: 1.2s;">
              <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">給團體出遊的額外建議</h2>
              <div class="flex flex-col md:flex-row justify-center items-center gap-8 text-center">
                  <div class="flex items-center flex-col p-4">
